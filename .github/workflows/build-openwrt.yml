@@ -44,12 +44,8 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  example_matrix:
-    strategy:
-      matrix:
-        os: ubuntu-22.04
-        version: [10, 12, 16]
-    runs-on: ${{ matrix.os }}
+  build:
+    runs-on: ubuntu-22.04
 
     steps:
     # - name: Checkout
