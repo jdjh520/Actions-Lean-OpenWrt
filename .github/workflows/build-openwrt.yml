@@ -51,6 +51,10 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+      
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.version }}
 
     - name: Initialization environment
       env:
