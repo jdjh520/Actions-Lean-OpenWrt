@@ -48,12 +48,12 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    # - name: Checkout
-      # uses: actions/checkout@master
+    - name: Checkout
+      uses: actions/checkout@master
       
     - uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.version }}
+        node-version: 16
 
     - name: Initialization environment
       env:
