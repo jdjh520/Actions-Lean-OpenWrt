@@ -47,8 +47,8 @@ jobs:
   example_matrix:
     strategy:
       matrix:
-        os: [ubuntu-22.04, ubuntu-20.04]
-        version: [10, 12, 14]
+        os: ubuntu-22.04
+        version: [10, 12, 16]
     runs-on: ${{ matrix.os }}
 
     steps:
