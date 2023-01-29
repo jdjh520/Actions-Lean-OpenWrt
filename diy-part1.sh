@@ -23,4 +23,4 @@
 
 # git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 git clone --depth=1 https://github.com/lylus/luci-app-zerotier.git package/luci-app-zerotier
-git clone --depth=1 https://github.com/jdjh520/luci-app-autoreboot.git package/luci-app-autoreboot
+# git clone --depth=1 https://github.com/jdjh520/luci-app-autoreboot.git package/luci-app-autoreboot
