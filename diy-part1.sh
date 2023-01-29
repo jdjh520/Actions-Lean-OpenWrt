@@ -19,3 +19,8 @@
 # Lienol/openwrt-package
 # sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/xiaorouji/openwrt-package' feeds.conf.default
+
+
+git clone --depth=1 https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone --depth=1 https://github.com/lylus/luci-app-zerotier.git package/luci-app-zerotier
+# git clone --depth=1 https://github.com/peter-tank/luci-app-fullconenat package/luci-app-fullconenat #全锥形NAT LUCI界面 (custom已附带)
