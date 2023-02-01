@@ -21,3 +21,7 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 # 修改内核版本
 
 # sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.15/g' target/linux/ramips/Makefile
+
+修改默认主题
+
+sed -i 's/+luci-theme-bootstrap/+luci-theme-material/g' feeds/luci/collections/luci/Makefile
