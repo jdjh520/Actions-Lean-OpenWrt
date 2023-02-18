@@ -6,7 +6,7 @@
 # Blog: https://P3TERX.com
 #=================================================
 
-name: Build OpenWrt Mastet
+name: Build OpenWrt Master
 
 on:
   repository_dispatch:
