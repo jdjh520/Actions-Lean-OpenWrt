@@ -24,4 +24,4 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 
 # 修改默认主题
 
-sed -i 's/+luci-theme-bootstrap/+luci-theme-material/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/+luci-theme-bootstrap/+luci-theme-material/g' feeds/luci/collections/luci/Makefile
