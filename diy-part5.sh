@@ -26,4 +26,4 @@ sed -i 's/hostname='ImmortalWrt'/hostname='Redmi'/g' package/base-files/files/bi
 
 # 修改默认主题
 
-sed -i 's/+luci-theme-bootstrap/+luci-theme-material/g' feeds/luci/collections/luci/Makefile
+# sed -i 's/+luci-theme-bootstrap/+luci-theme-material/g' feeds/luci/collections/luci/Makefile
