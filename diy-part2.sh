@@ -14,11 +14,11 @@
 sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 
 # 默认开启wifi
-# sed -i 's/wireless.radio${devidx}.disabled=1/wireless.radio${devidx}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/wireless.radio${devidx}.disabled=1/wireless.radio${devidx}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # sed -i 's/wireless.${name}.disabled=1/wireless.${name}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-sed -i 's/defaults ? 0 : 1/0/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
+# sed -i 's/defaults ? 0 : 1/0/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 
 # 修改内核版本
 
