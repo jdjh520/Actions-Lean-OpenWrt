@@ -6,7 +6,7 @@
 # Blog: https://P3TERX.com
 #=================================================
 
-name: Build OpenWrt Master
+name: Build Redmi AC2100
 
 on:
   repository_dispatch:
