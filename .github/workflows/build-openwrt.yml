@@ -6,7 +6,7 @@
 # Blog: https://P3TERX.com
 #=================================================
 
-name: Build OpenWrt
+name: Build immortalwrt
 
 on:
   repository_dispatch:
@@ -29,10 +29,10 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: v21.02.7
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-18.06-k5.4
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: openwrt.config
+  CONFIG_FILE: immortalwrt.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
