@@ -1,4 +1,4 @@
-name: Build wr30u-2410 OpenWrt
+name: Build test-wr30u-2410 OpenWrt
 
 on:
   repository_dispatch:
