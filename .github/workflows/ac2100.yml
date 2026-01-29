@@ -6,7 +6,7 @@ on:
 
 env:
   REPO_URL: https://github.com/jdjh520/lede
-  REPO_BRANCH: 2410
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: wr30u-2410.config
   DIY_P1_SH: diy-part1.sh
