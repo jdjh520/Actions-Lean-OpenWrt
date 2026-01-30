@@ -13,6 +13,7 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/luci/bin/config_generate
 # sed -i 's/ci-llvm=true/ci-llvm=false/g' feeds/packages/lang/rust/Makefile
+sed -i 's/default NODEJS_12/default NODEJS_20/g' feeds/packages/lang/node/Makefile
 
 # 默认开启wifi
 # sed -i 's/wireless.radio${devidx}.disabled=1/wireless.radio${devidx}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
