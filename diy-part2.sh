@@ -26,5 +26,5 @@ sed -i 's/src-git luci/#src-git luci/g' feeds.conf.default
 
 echo 'src-git packages https://github.com/jdjh520/packages-24.10.git;openwrt-24.10' >>feeds.conf.default
 echo 'src-git luci https://github.com/jdjh520/luci-24.10.git;openwrt-24.10' >>feeds.conf.default
-
+echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
 
