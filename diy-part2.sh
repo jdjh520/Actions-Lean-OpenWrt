@@ -20,7 +20,7 @@ sed -i 's/192.168.6.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 
 # sed -i 's/defaults ? 0 : 1/0/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
 sed -i 's/src-git packages/#src-git packages/g' feeds.conf.default
-sed -i 's/src-git luci https/https://#src-git luci https/g' feeds.conf.default
+sed -i 's/src-git luci https/#src-git luci https/g' feeds.conf.default
 
 
 
