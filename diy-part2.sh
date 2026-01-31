@@ -19,9 +19,12 @@ sed -i 's/192.168.6.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 # sed -i 's/wireless.${name}.disabled=1/wireless.${name}.disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # sed -i 's/defaults ? 0 : 1/0/g' package/network/config/wifi-scripts/files/lib/wifi/mac80211.uc
-sed -i 's/https://github.com/immortalwrt/packages.git/https://github.com/jdjh520/packages-24.10.git/g' feeds.conf.default
-sed -i 's/https://github.com/immortalwrt/luci.git/https://github.com/jdjh520/luci-24.10.git/g' feeds.conf.default
+sed -i 's/src-git packages/#src-git packages/g' feeds.conf.default
+sed -i 's/src-git luci https/https://#src-git luci https/g' feeds.conf.default
 
 
+
+echo 'src-git packages https://github.com/jdjh520/packages-24.10.git;openwrt-24.10' >>feeds.conf.default
+echo 'src-git luci https://github.com/jdjh520/luci-24.10.git;openwrt-24.10' >>feeds.conf.default
 
 
