@@ -23,6 +23,19 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v1
+      
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+          node-version: 22
+
+    - name: npm install, build and test
+      run: |
+       npm install
+       npm run swagger
+          
     - name: Checkout
       uses: actions/checkout@v6
 
