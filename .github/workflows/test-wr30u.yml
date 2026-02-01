@@ -23,9 +23,6 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v1
-      
     - name: Checkout
       uses: actions/checkout@v6
 
