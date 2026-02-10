@@ -72,6 +72,13 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+    - name: 修复 rust serde Cargo.toml.orig 缺失
+      run: |
+       cd openwrt
+       mkdir -p build_dir/target-aarch64_cortex-a53_musl/host/rustc-1.90.0-src/vendor/serde-1.0.215/
+       cp build_dir/target-aarch64_cortex-a53_musl/host/rustc-1.90.0-src/vendor/serde-1.0.215/Cargo.toml \
+       build_dir/target-aarch64_cortex-a53_musl/host/rustc-1.90.0-src/vendor/serde-1.0.215/Cargo.toml.orig || true
+
 
     - name: Download package
       id: package
